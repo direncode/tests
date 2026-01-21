@@ -1,0 +1,721 @@
+{
+  "config": {
+    "latent_dim": 16,
+    "num_steps": 100,
+    "learning_rate": 0.01,
+    "num_samples": 100,
+    "num_trials": 3
+  },
+  "experiments": [
+    {
+      "experiment": "multimodal_recovery",
+      "method": "hmed_full",
+      "metrics": {
+        "mode_coverage": 1.0,
+        "mode_coverage_std": 0.0,
+        "collapse_rate": 0.25333333333333335,
+        "collapse_rate_std": 0.02054804667656326,
+        "entropy_ratio": 0.9879001238135489,
+        "entropy_ratio_std": 0.00593349709027114,
+        "num_modes_found": 5.0,
+        "num_modes_found_std": 0.0
+      }
+    },
+    {
+      "experiment": "multimodal_recovery",
+      "method": "hmed_euclidean",
+      "metrics": {
+        "mode_coverage": 1.0,
+        "mode_coverage_std": 0.0,
+        "collapse_rate": 0.25333333333333335,
+        "collapse_rate_std": 0.02054804667656326,
+        "entropy_ratio": 0.9879001238135489,
+        "entropy_ratio_std": 0.00593349709027114,
+        "num_modes_found": 5.0,
+        "num_modes_found_std": 0.0
+      }
+    },
+    {
+      "experiment": "multimodal_recovery",
+      "method": "sgd",
+      "metrics": {
+        "mode_coverage": 1.0,
+        "mode_coverage_std": 0.0,
+        "collapse_rate": 0.25333333333333335,
+        "collapse_rate_std": 0.02054804667656326,
+        "entropy_ratio": 0.9879001238135489,
+        "entropy_ratio_std": 0.00593349709027114,
+        "num_modes_found": 5.0,
+        "num_modes_found_std": 0.0
+      }
+    },
+    {
+      "experiment": "multimodal_recovery",
+      "method": "diffusion",
+      "metrics": {
+        "mode_coverage": 0.20000000000000004,
+        "mode_coverage_std": 2.7755575615628914e-17,
+        "collapse_rate": 1.0,
+        "collapse_rate_std": 0.0,
+        "entropy_ratio": 0.0,
+        "entropy_ratio_std": 0.0,
+        "num_modes_found": 1.0,
+        "num_modes_found_std": 0.0
+      }
+    },
+    {
+      "experiment": "multimodal_recovery",
+      "method": "hmed_sphere",
+      "metrics": {
+        "mode_coverage": 1.0,
+        "mode_coverage_std": 0.0,
+        "collapse_rate": 0.25333333333333335,
+        "collapse_rate_std": 0.02054804667656326,
+        "entropy_ratio": 0.9879001238135489,
+        "entropy_ratio_std": 0.00593349709027114,
+        "num_modes_found": 5.0,
+        "num_modes_found_std": 0.0
+      }
+    },
+    {
+      "experiment": "long_horizon_h10",
+      "method": "hmed_full",
+      "metrics": {
+        "final_error": 4.2197442054748535,
+        "grad_decay": 0.38742048211391894,
+        "trajectory_stability": 0.02619292524953683,
+        "horizon": 10.0
+      }
+    },
+    {
+      "experiment": "long_horizon_h10",
+      "method": "hmed_euclidean",
+      "metrics": {
+        "final_error": 4.2197442054748535,
+        "grad_decay": 0.38742048211391894,
+        "trajectory_stability": 0.02619292524953683,
+        "horizon": 10.0
+      }
+    },
+    {
+      "experiment": "long_horizon_h10",
+      "method": "sgd",
+      "metrics": {
+        "final_error": 4.206151803334554,
+        "grad_decay": 0.38742043708491875,
+        "trajectory_stability": 0.02617587335407734,
+        "horizon": 10.0
+      }
+    },
+    {
+      "experiment": "long_horizon_h10",
+      "method": "diffusion",
+      "metrics": {
+        "final_error": 12.279195467631022,
+        "grad_decay": 0.38742039866460215,
+        "trajectory_stability": 3.8736133575439453,
+        "horizon": 10.0
+      }
+    },
+    {
+      "experiment": "long_horizon_h10",
+      "method": "hmed_sphere",
+      "metrics": {
+        "final_error": 4.198322931925456,
+        "grad_decay": 0.38742048609037066,
+        "trajectory_stability": 0.017521290108561516,
+        "horizon": 10.0
+      }
+    },
+    {
+      "experiment": "long_horizon_h25",
+      "method": "hmed_full",
+      "metrics": {
+        "final_error": 4.258701801300049,
+        "grad_decay": 0.07976643517307724,
+        "trajectory_stability": 0.04346060752868652,
+        "horizon": 25.0
+      }
+    },
+    {
+      "experiment": "long_horizon_h25",
+      "method": "hmed_euclidean",
+      "metrics": {
+        "final_error": 4.258701801300049,
+        "grad_decay": 0.07976643517307724,
+        "trajectory_stability": 0.04346060752868652,
+        "horizon": 25.0
+      }
+    },
+    {
+      "experiment": "long_horizon_h25",
+      "method": "sgd",
+      "metrics": {
+        "final_error": 4.258152008056641,
+        "grad_decay": 0.07976643235562518,
+        "trajectory_stability": 0.04346561307708422,
+        "horizon": 25.0
+      }
+    },
+    {
+      "experiment": "long_horizon_h25",
+      "method": "diffusion",
+      "metrics": {
+        "final_error": 5.145074049631755,
+        "grad_decay": 0.0797664162926978,
+        "trajectory_stability": 11.061168352762857,
+        "horizon": 25.0
+      }
+    },
+    {
+      "experiment": "long_horizon_h25",
+      "method": "hmed_sphere",
+      "metrics": {
+        "final_error": 4.259675184885661,
+        "grad_decay": 0.07976643235562518,
+        "trajectory_stability": 0.029364699497818947,
+        "horizon": 25.0
+      }
+    },
+    {
+      "experiment": "long_horizon_h50",
+      "method": "hmed_full",
+      "metrics": {
+        "final_error": 4.24488623936971,
+        "grad_decay": 0.005726414967726338,
+        "trajectory_stability": 0.05040001372496287,
+        "horizon": 50.0
+      }
+    },
+    {
+      "experiment": "long_horizon_h50",
+      "method": "hmed_euclidean",
+      "metrics": {
+        "final_error": 4.24488623936971,
+        "grad_decay": 0.005726414967726338,
+        "trajectory_stability": 0.05040001372496287,
+        "horizon": 50.0
+      }
+    },
+    {
+      "experiment": "long_horizon_h50",
+      "method": "sgd",
+      "metrics": {
+        "final_error": 4.2448835372924805,
+        "grad_decay": 0.0057264153079643375,
+        "trajectory_stability": 0.050400360176960625,
+        "horizon": 50.0
+      }
+    },
+    {
+      "experiment": "long_horizon_h50",
+      "method": "diffusion",
+      "metrics": {
+        "final_error": 4.255911827087402,
+        "grad_decay": 0.0057264146917789084,
+        "trajectory_stability": 10.425392468770346,
+        "horizon": 50.0
+      }
+    },
+    {
+      "experiment": "long_horizon_h50",
+      "method": "hmed_sphere",
+      "metrics": {
+        "final_error": 4.245095729827881,
+        "grad_decay": 0.00572641462748841,
+        "trajectory_stability": 0.03802673394481341,
+        "horizon": 50.0
+      }
+    },
+    {
+      "experiment": "noise_dominated_snr0.05",
+      "method": "hmed_full",
+      "metrics": {
+        "reconstruction_error": 19.54102389017741,
+        "latent_error": 9.710307757059732,
+        "latent_smoothness": 6.470506350199382,
+        "failure_rate": 1.0,
+        "snr": 0.05000000000000001
+      }
+    },
+    {
+      "experiment": "noise_dominated_snr0.05",
+      "method": "hmed_euclidean",
+      "metrics": {
+        "reconstruction_error": 19.54102389017741,
+        "latent_error": 9.710307757059732,
+        "latent_smoothness": 6.470506350199382,
+        "failure_rate": 1.0,
+        "snr": 0.05000000000000001
+      }
+    },
+    {
+      "experiment": "noise_dominated_snr0.05",
+      "method": "sgd",
+      "metrics": {
+        "reconstruction_error": 19.12863286336263,
+        "latent_error": 11.018870989481607,
+        "latent_smoothness": 8.348412990570068,
+        "failure_rate": 1.0,
+        "snr": 0.05000000000000001
+      }
+    },
+    {
+      "experiment": "noise_dominated_snr0.05",
+      "method": "diffusion",
+      "metrics": {
+        "reconstruction_error": Infinity,
+        "latent_error": Infinity,
+        "latent_smoothness": Infinity,
+        "failure_rate": 1.0,
+        "snr": 0.05000000000000001
+      }
+    },
+    {
+      "experiment": "noise_dominated_snr0.05",
+      "method": "hmed_sphere",
+      "metrics": {
+        "reconstruction_error": 25.150524139404297,
+        "latent_error": 3.7523323694864907,
+        "latent_smoothness": 0.0625067154566447,
+        "failure_rate": 0.033333332588275276,
+        "snr": 0.05000000000000001
+      }
+    },
+    {
+      "experiment": "noise_dominated_snr0.1",
+      "method": "hmed_full",
+      "metrics": {
+        "reconstruction_error": 13.83986790974935,
+        "latent_error": 6.954395771026611,
+        "latent_smoothness": 3.5181362628936768,
+        "failure_rate": 0.9600000182787577,
+        "snr": 0.10000000000000002
+      }
+    },
+    {
+      "experiment": "noise_dominated_snr0.1",
+      "method": "hmed_euclidean",
+      "metrics": {
+        "reconstruction_error": 13.83986790974935,
+        "latent_error": 6.954395771026611,
+        "latent_smoothness": 3.5181362628936768,
+        "failure_rate": 0.9600000182787577,
+        "snr": 0.10000000000000002
+      }
+    },
+    {
+      "experiment": "noise_dominated_snr0.1",
+      "method": "sgd",
+      "metrics": {
+        "reconstruction_error": 13.539617220560709,
+        "latent_error": 7.84546422958374,
+        "latent_smoothness": 4.497586091359456,
+        "failure_rate": 0.9700000087420145,
+        "snr": 0.10000000000000002
+      }
+    },
+    {
+      "experiment": "noise_dominated_snr0.1",
+      "method": "diffusion",
+      "metrics": {
+        "reconstruction_error": Infinity,
+        "latent_error": Infinity,
+        "latent_smoothness": Infinity,
+        "failure_rate": 1.0,
+        "snr": 0.10000000000000002
+      }
+    },
+    {
+      "experiment": "noise_dominated_snr0.1",
+      "method": "hmed_sphere",
+      "metrics": {
+        "reconstruction_error": 17.90047836303711,
+        "latent_error": 3.6458754539489746,
+        "latent_smoothness": 0.06248884151379267,
+        "failure_rate": 0.029999999329447746,
+        "snr": 0.10000000000000002
+      }
+    },
+    {
+      "experiment": "noise_dominated_snr0.2",
+      "method": "hmed_full",
+      "metrics": {
+        "reconstruction_error": 9.812599817911783,
+        "latent_error": 5.049383322397868,
+        "latent_smoothness": 2.0564422607421875,
+        "failure_rate": 0.5,
+        "snr": 0.20000000000000004
+      }
+    },
+    {
+      "experiment": "noise_dominated_snr0.2",
+      "method": "hmed_euclidean",
+      "metrics": {
+        "reconstruction_error": 9.812599817911783,
+        "latent_error": 5.049383322397868,
+        "latent_smoothness": 2.0564422607421875,
+        "failure_rate": 0.5,
+        "snr": 0.20000000000000004
+      }
+    },
+    {
+      "experiment": "noise_dominated_snr0.2",
+      "method": "sgd",
+      "metrics": {
+        "reconstruction_error": 9.59317938486735,
+        "latent_error": 5.621521949768066,
+        "latent_smoothness": 2.5768157641092935,
+        "failure_rate": 0.7399999896685282,
+        "snr": 0.20000000000000004
+      }
+    },
+    {
+      "experiment": "noise_dominated_snr0.2",
+      "method": "diffusion",
+      "metrics": {
+        "reconstruction_error": Infinity,
+        "latent_error": Infinity,
+        "latent_smoothness": Infinity,
+        "failure_rate": 1.0,
+        "snr": 0.20000000000000004
+      }
+    },
+    {
+      "experiment": "noise_dominated_snr0.2",
+      "method": "hmed_sphere",
+      "metrics": {
+        "reconstruction_error": 12.902674674987793,
+        "latent_error": 3.5224196910858154,
+        "latent_smoothness": 0.06247450038790703,
+        "failure_rate": 0.01333333303531011,
+        "snr": 0.20000000000000004
+      }
+    },
+    {
+      "experiment": "regime_discovery_euclidean",
+      "method": "hmed_euclidean",
+      "metrics": {
+        "num_regimes_discovered": 4.0,
+        "transition_sharpness": 0.39999999726812047,
+        "latent_separability": 0.2637831731111428
+      }
+    },
+    {
+      "experiment": "regime_discovery_sphere",
+      "method": "hmed_sphere",
+      "metrics": {
+        "num_regimes_discovered": 4.0,
+        "transition_sharpness": 1.4000000059604645,
+        "latent_separability": 1.4718397905438696
+      }
+    },
+    {
+      "experiment": "stability_gradient_noise",
+      "method": "level_0.1",
+      "metrics": {
+        "noise_0.1_convergence_rate": 0.0,
+        "noise_0.1_divergence_rate": 0.0,
+        "noise_0.1_recovery_rate": 1.0,
+        "noise_0.1_mean_final_energy": 1.0420666337013245
+      }
+    },
+    {
+      "experiment": "stability_gradient_noise",
+      "method": "level_0.5",
+      "metrics": {
+        "noise_0.5_convergence_rate": 0.0,
+        "noise_0.5_divergence_rate": 0.0,
+        "noise_0.5_recovery_rate": 1.0,
+        "noise_0.5_mean_final_energy": 1.0531140367190044
+      }
+    },
+    {
+      "experiment": "stability_gradient_noise",
+      "method": "level_1.0",
+      "metrics": {
+        "noise_1.0_convergence_rate": 0.0,
+        "noise_1.0_divergence_rate": 0.0,
+        "noise_1.0_recovery_rate": 1.0,
+        "noise_1.0_mean_final_energy": 1.0815237363179524
+      }
+    },
+    {
+      "experiment": "stability_init_chaos",
+      "method": "level_1.0",
+      "metrics": {
+        "chaos_1.0_convergence_rate": 0.0,
+        "chaos_1.0_divergence_rate": 0.0,
+        "chaos_1.0_recovery_rate": 1.0,
+        "chaos_1.0_mean_final_energy": 1.506981631120046
+      }
+    },
+    {
+      "experiment": "stability_init_chaos",
+      "method": "level_5.0",
+      "metrics": {
+        "chaos_5.0_convergence_rate": 0.0,
+        "chaos_5.0_divergence_rate": 0.0,
+        "chaos_5.0_recovery_rate": 1.0,
+        "chaos_5.0_mean_final_energy": 36.39712333679199
+      }
+    },
+    {
+      "experiment": "stability_init_chaos",
+      "method": "level_10.0",
+      "metrics": {
+        "chaos_10.0_convergence_rate": 0.0,
+        "chaos_10.0_divergence_rate": 0.6666666666666666,
+        "chaos_10.0_recovery_rate": 0.33333333333333337,
+        "chaos_10.0_mean_final_energy": 145.0979092915853
+      }
+    }
+  ],
+  "ablations": [
+    {
+      "experiment": "ablation",
+      "method": "full",
+      "metrics": {
+        "final_energy": 6.112979729970296,
+        "use_modulation": true,
+        "use_hierarchy": true,
+        "use_aggregation": true
+      }
+    },
+    {
+      "experiment": "ablation",
+      "method": "no_modulation",
+      "metrics": {
+        "final_energy": 6.097803592681885,
+        "use_modulation": false,
+        "use_hierarchy": true,
+        "use_aggregation": true
+      }
+    },
+    {
+      "experiment": "ablation",
+      "method": "no_hierarchy",
+      "metrics": {
+        "final_energy": 5.4351270993550616,
+        "use_modulation": true,
+        "use_hierarchy": false,
+        "use_aggregation": true
+      }
+    },
+    {
+      "experiment": "ablation",
+      "method": "no_aggregation",
+      "metrics": {
+        "final_energy": 6.112979729970296,
+        "use_modulation": true,
+        "use_hierarchy": true,
+        "use_aggregation": false
+      }
+    },
+    {
+      "experiment": "ablation",
+      "method": "minimal",
+      "metrics": {
+        "final_energy": 5.434188524881999,
+        "use_modulation": false,
+        "use_hierarchy": false,
+        "use_aggregation": false
+      }
+    },
+    {
+      "experiment": "ablation_manifold",
+      "method": "euclidean",
+      "metrics": {
+        "final_energy": 6.112979729970296,
+        "curvature": 0.0
+      }
+    },
+    {
+      "experiment": "ablation_manifold",
+      "method": "sphere",
+      "metrics": {
+        "final_energy": 13.221940358479818,
+        "curvature": 1.0
+      }
+    },
+    {
+      "experiment": "ablation_manifold",
+      "method": "hyperbolic",
+      "metrics": {
+        "final_energy": 18.076819101969402,
+        "curvature": -1.0
+      }
+    }
+  ],
+  "timing": {
+    "multimodal": 0.995377779006958,
+    "long_horizon": 3.4053409099578857,
+    "noise_dominated": 1.7285845279693604,
+    "regime_discovery": 0.36684250831604004,
+    "stability": 0.6511111259460449,
+    "ablations": 1.3156678676605225
+  },
+  "analysis": {
+    "summary": {},
+    "winner_per_experiment": {
+      "multimodal_recovery": {
+        "winner": "hmed_full",
+        "metric": "mode_coverage",
+        "value": 1.0
+      },
+      "long_horizon_h10": {
+        "winner": "hmed_sphere",
+        "metric": "final_error",
+        "value": 4.198322931925456
+      },
+      "long_horizon_h25": {
+        "winner": "sgd",
+        "metric": "final_error",
+        "value": 4.258152008056641
+      },
+      "long_horizon_h50": {
+        "winner": "sgd",
+        "metric": "final_error",
+        "value": 4.2448835372924805
+      },
+      "noise_dominated_snr0.05": {
+        "winner": "hmed_sphere",
+        "metric": "failure_rate",
+        "value": 0.033333332588275276
+      },
+      "noise_dominated_snr0.1": {
+        "winner": "hmed_sphere",
+        "metric": "failure_rate",
+        "value": 0.029999999329447746
+      },
+      "noise_dominated_snr0.2": {
+        "winner": "hmed_sphere",
+        "metric": "failure_rate",
+        "value": 0.01333333303531011
+      },
+      "regime_discovery_euclidean": {
+        "winner": "hmed_euclidean",
+        "metric": "latent_separability",
+        "value": 0.2637831731111428
+      },
+      "regime_discovery_sphere": {
+        "winner": "hmed_sphere",
+        "metric": "latent_separability",
+        "value": 1.4718397905438696
+      },
+      "stability_gradient_noise": {
+        "winner": null,
+        "metric": "failure_rate",
+        "value": null
+      },
+      "stability_init_chaos": {
+        "winner": "level_1.0",
+        "metric": "convergence_rate",
+        "value": 0.0
+      }
+    },
+    "failure_modes": [],
+    "statistical_significance": {}
+  },
+  "failures": [
+    {
+      "experiment": "multimodal_recovery",
+      "method": "diffusion",
+      "failure_type": "mode_collapse",
+      "value": 1.0,
+      "mathematical_reason": "Mode collapse occurs when the energy landscape has strong curvature asymmetry, causing optimization to funnel all trajectories into a single basin. This is a gradient-based limitation where: \u2207L points toward dominant mode with larger eigenvalues in Hessian, causing faster convergence there regardless of initialization.",
+      "is_fundamental": true,
+      "can_fix": "Partially addressable by: (1) Increasing periodic modulation amplitude to resist gradient pull, (2) Using repulsive terms between particles, (3) Parallel chains with different initializations. But fundamentally limited by gradient-based optimization's local nature."
+    },
+    {
+      "experiment": "noise_dominated_snr0.05",
+      "method": "hmed_full",
+      "failure_type": "inference_failure",
+      "value": 1.0,
+      "mathematical_reason": "High failure rate under noise indicates the energy well structure is insufficiently deep or wide. When SNR < 0.2, the observation likelihood term ||y - f(z)||\u00b2 has gradient magnitude O(noise_std), while the prior gradient may be O(1). This causes prior domination, ignoring observations.",
+      "is_fundamental": false,
+      "can_fix": "Addressable by: (1) Adaptive likelihood weighting, (2) Robust loss functions (e.g., Huber), (3) Iterative reweighting based on residuals. Not fundamental - proper noise modeling solves this."
+    },
+    {
+      "experiment": "noise_dominated_snr0.05",
+      "method": "hmed_euclidean",
+      "failure_type": "inference_failure",
+      "value": 1.0,
+      "mathematical_reason": "High failure rate under noise indicates the energy well structure is insufficiently deep or wide. When SNR < 0.2, the observation likelihood term ||y - f(z)||\u00b2 has gradient magnitude O(noise_std), while the prior gradient may be O(1). This causes prior domination, ignoring observations.",
+      "is_fundamental": false,
+      "can_fix": "Addressable by: (1) Adaptive likelihood weighting, (2) Robust loss functions (e.g., Huber), (3) Iterative reweighting based on residuals. Not fundamental - proper noise modeling solves this."
+    },
+    {
+      "experiment": "noise_dominated_snr0.05",
+      "method": "sgd",
+      "failure_type": "inference_failure",
+      "value": 1.0,
+      "mathematical_reason": "High failure rate under noise indicates the energy well structure is insufficiently deep or wide. When SNR < 0.2, the observation likelihood term ||y - f(z)||\u00b2 has gradient magnitude O(noise_std), while the prior gradient may be O(1). This causes prior domination, ignoring observations.",
+      "is_fundamental": false,
+      "can_fix": "Addressable by: (1) Adaptive likelihood weighting, (2) Robust loss functions (e.g., Huber), (3) Iterative reweighting based on residuals. Not fundamental - proper noise modeling solves this."
+    },
+    {
+      "experiment": "noise_dominated_snr0.05",
+      "method": "diffusion",
+      "failure_type": "inference_failure",
+      "value": 1.0,
+      "mathematical_reason": "High failure rate under noise indicates the energy well structure is insufficiently deep or wide. When SNR < 0.2, the observation likelihood term ||y - f(z)||\u00b2 has gradient magnitude O(noise_std), while the prior gradient may be O(1). This causes prior domination, ignoring observations.",
+      "is_fundamental": false,
+      "can_fix": "Addressable by: (1) Adaptive likelihood weighting, (2) Robust loss functions (e.g., Huber), (3) Iterative reweighting based on residuals. Not fundamental - proper noise modeling solves this."
+    },
+    {
+      "experiment": "noise_dominated_snr0.1",
+      "method": "hmed_full",
+      "failure_type": "inference_failure",
+      "value": 0.9600000182787577,
+      "mathematical_reason": "High failure rate under noise indicates the energy well structure is insufficiently deep or wide. When SNR < 0.2, the observation likelihood term ||y - f(z)||\u00b2 has gradient magnitude O(noise_std), while the prior gradient may be O(1). This causes prior domination, ignoring observations.",
+      "is_fundamental": false,
+      "can_fix": "Addressable by: (1) Adaptive likelihood weighting, (2) Robust loss functions (e.g., Huber), (3) Iterative reweighting based on residuals. Not fundamental - proper noise modeling solves this."
+    },
+    {
+      "experiment": "noise_dominated_snr0.1",
+      "method": "hmed_euclidean",
+      "failure_type": "inference_failure",
+      "value": 0.9600000182787577,
+      "mathematical_reason": "High failure rate under noise indicates the energy well structure is insufficiently deep or wide. When SNR < 0.2, the observation likelihood term ||y - f(z)||\u00b2 has gradient magnitude O(noise_std), while the prior gradient may be O(1). This causes prior domination, ignoring observations.",
+      "is_fundamental": false,
+      "can_fix": "Addressable by: (1) Adaptive likelihood weighting, (2) Robust loss functions (e.g., Huber), (3) Iterative reweighting based on residuals. Not fundamental - proper noise modeling solves this."
+    },
+    {
+      "experiment": "noise_dominated_snr0.1",
+      "method": "sgd",
+      "failure_type": "inference_failure",
+      "value": 0.9700000087420145,
+      "mathematical_reason": "High failure rate under noise indicates the energy well structure is insufficiently deep or wide. When SNR < 0.2, the observation likelihood term ||y - f(z)||\u00b2 has gradient magnitude O(noise_std), while the prior gradient may be O(1). This causes prior domination, ignoring observations.",
+      "is_fundamental": false,
+      "can_fix": "Addressable by: (1) Adaptive likelihood weighting, (2) Robust loss functions (e.g., Huber), (3) Iterative reweighting based on residuals. Not fundamental - proper noise modeling solves this."
+    },
+    {
+      "experiment": "noise_dominated_snr0.1",
+      "method": "diffusion",
+      "failure_type": "inference_failure",
+      "value": 1.0,
+      "mathematical_reason": "High failure rate under noise indicates the energy well structure is insufficiently deep or wide. When SNR < 0.2, the observation likelihood term ||y - f(z)||\u00b2 has gradient magnitude O(noise_std), while the prior gradient may be O(1). This causes prior domination, ignoring observations.",
+      "is_fundamental": false,
+      "can_fix": "Addressable by: (1) Adaptive likelihood weighting, (2) Robust loss functions (e.g., Huber), (3) Iterative reweighting based on residuals. Not fundamental - proper noise modeling solves this."
+    },
+    {
+      "experiment": "noise_dominated_snr0.2",
+      "method": "sgd",
+      "failure_type": "inference_failure",
+      "value": 0.7399999896685282,
+      "mathematical_reason": "High failure rate under noise indicates the energy well structure is insufficiently deep or wide. When SNR < 0.2, the observation likelihood term ||y - f(z)||\u00b2 has gradient magnitude O(noise_std), while the prior gradient may be O(1). This causes prior domination, ignoring observations.",
+      "is_fundamental": false,
+      "can_fix": "Addressable by: (1) Adaptive likelihood weighting, (2) Robust loss functions (e.g., Huber), (3) Iterative reweighting based on residuals. Not fundamental - proper noise modeling solves this."
+    },
+    {
+      "experiment": "noise_dominated_snr0.2",
+      "method": "diffusion",
+      "failure_type": "inference_failure",
+      "value": 1.0,
+      "mathematical_reason": "High failure rate under noise indicates the energy well structure is insufficiently deep or wide. When SNR < 0.2, the observation likelihood term ||y - f(z)||\u00b2 has gradient magnitude O(noise_std), while the prior gradient may be O(1). This causes prior domination, ignoring observations.",
+      "is_fundamental": false,
+      "can_fix": "Addressable by: (1) Adaptive likelihood weighting, (2) Robust loss functions (e.g., Huber), (3) Iterative reweighting based on residuals. Not fundamental - proper noise modeling solves this."
+    }
+  ]
+}

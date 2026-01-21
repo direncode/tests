@@ -1,0 +1,94 @@
+======================================================================
+HMED EXPERIMENT SUMMARY REPORT
+======================================================================
+
+
+MULTIMODAL_RECOVERY
+--------------------------------------------------
+  hmed_full: mode_coverage=1.0000, mode_coverage_std=0.0000, collapse_rate=0.2533, collapse_rate_std=0.0205, entropy_ratio=0.9879
+  hmed_euclidean: mode_coverage=1.0000, mode_coverage_std=0.0000, collapse_rate=0.2533, collapse_rate_std=0.0205, entropy_ratio=0.9879
+  sgd: mode_coverage=1.0000, mode_coverage_std=0.0000, collapse_rate=0.2533, collapse_rate_std=0.0205, entropy_ratio=0.9879
+  diffusion: mode_coverage=0.2000, mode_coverage_std=0.0000, collapse_rate=1.0000, collapse_rate_std=0.0000, entropy_ratio=0.0000
+  hmed_sphere: mode_coverage=1.0000, mode_coverage_std=0.0000, collapse_rate=0.2533, collapse_rate_std=0.0205, entropy_ratio=0.9879
+
+LONG_HORIZON_H10
+--------------------------------------------------
+  hmed_full: final_error=4.2197, grad_decay=0.3874, trajectory_stability=0.0262, horizon=10.0000
+  hmed_euclidean: final_error=4.2197, grad_decay=0.3874, trajectory_stability=0.0262, horizon=10.0000
+  sgd: final_error=4.2062, grad_decay=0.3874, trajectory_stability=0.0262, horizon=10.0000
+  diffusion: final_error=12.2792, grad_decay=0.3874, trajectory_stability=3.8736, horizon=10.0000
+  hmed_sphere: final_error=4.1983, grad_decay=0.3874, trajectory_stability=0.0175, horizon=10.0000
+
+LONG_HORIZON_H25
+--------------------------------------------------
+  hmed_full: final_error=4.2587, grad_decay=0.0798, trajectory_stability=0.0435, horizon=25.0000
+  hmed_euclidean: final_error=4.2587, grad_decay=0.0798, trajectory_stability=0.0435, horizon=25.0000
+  sgd: final_error=4.2582, grad_decay=0.0798, trajectory_stability=0.0435, horizon=25.0000
+  diffusion: final_error=5.1451, grad_decay=0.0798, trajectory_stability=11.0612, horizon=25.0000
+  hmed_sphere: final_error=4.2597, grad_decay=0.0798, trajectory_stability=0.0294, horizon=25.0000
+
+LONG_HORIZON_H50
+--------------------------------------------------
+  hmed_full: final_error=4.2449, grad_decay=0.0057, trajectory_stability=0.0504, horizon=50.0000
+  hmed_euclidean: final_error=4.2449, grad_decay=0.0057, trajectory_stability=0.0504, horizon=50.0000
+  sgd: final_error=4.2449, grad_decay=0.0057, trajectory_stability=0.0504, horizon=50.0000
+  diffusion: final_error=4.2559, grad_decay=0.0057, trajectory_stability=10.4254, horizon=50.0000
+  hmed_sphere: final_error=4.2451, grad_decay=0.0057, trajectory_stability=0.0380, horizon=50.0000
+
+NOISE_DOMINATED_SNR0.05
+--------------------------------------------------
+  hmed_full: reconstruction_error=19.5410, latent_error=9.7103, latent_smoothness=6.4705, failure_rate=1.0000, snr=0.0500
+  hmed_euclidean: reconstruction_error=19.5410, latent_error=9.7103, latent_smoothness=6.4705, failure_rate=1.0000, snr=0.0500
+  sgd: reconstruction_error=19.1286, latent_error=11.0189, latent_smoothness=8.3484, failure_rate=1.0000, snr=0.0500
+  diffusion: reconstruction_error=inf, latent_error=inf, latent_smoothness=inf, failure_rate=1.0000, snr=0.0500
+  hmed_sphere: reconstruction_error=25.1505, latent_error=3.7523, latent_smoothness=0.0625, failure_rate=0.0333, snr=0.0500
+
+NOISE_DOMINATED_SNR0.1
+--------------------------------------------------
+  hmed_full: reconstruction_error=13.8399, latent_error=6.9544, latent_smoothness=3.5181, failure_rate=0.9600, snr=0.1000
+  hmed_euclidean: reconstruction_error=13.8399, latent_error=6.9544, latent_smoothness=3.5181, failure_rate=0.9600, snr=0.1000
+  sgd: reconstruction_error=13.5396, latent_error=7.8455, latent_smoothness=4.4976, failure_rate=0.9700, snr=0.1000
+  diffusion: reconstruction_error=inf, latent_error=inf, latent_smoothness=inf, failure_rate=1.0000, snr=0.1000
+  hmed_sphere: reconstruction_error=17.9005, latent_error=3.6459, latent_smoothness=0.0625, failure_rate=0.0300, snr=0.1000
+
+NOISE_DOMINATED_SNR0.2
+--------------------------------------------------
+  hmed_full: reconstruction_error=9.8126, latent_error=5.0494, latent_smoothness=2.0564, failure_rate=0.5000, snr=0.2000
+  hmed_euclidean: reconstruction_error=9.8126, latent_error=5.0494, latent_smoothness=2.0564, failure_rate=0.5000, snr=0.2000
+  sgd: reconstruction_error=9.5932, latent_error=5.6215, latent_smoothness=2.5768, failure_rate=0.7400, snr=0.2000
+  diffusion: reconstruction_error=inf, latent_error=inf, latent_smoothness=inf, failure_rate=1.0000, snr=0.2000
+  hmed_sphere: reconstruction_error=12.9027, latent_error=3.5224, latent_smoothness=0.0625, failure_rate=0.0133, snr=0.2000
+
+REGIME_DISCOVERY_EUCLIDEAN
+--------------------------------------------------
+  hmed_euclidean: num_regimes_discovered=4.0000, transition_sharpness=0.4000, latent_separability=0.2638
+
+REGIME_DISCOVERY_SPHERE
+--------------------------------------------------
+  hmed_sphere: num_regimes_discovered=4.0000, transition_sharpness=1.4000, latent_separability=1.4718
+
+STABILITY_GRADIENT_NOISE
+--------------------------------------------------
+  level_0.1: noise_0.1_convergence_rate=0.0000, noise_0.1_divergence_rate=0.0000, noise_0.1_recovery_rate=1.0000, noise_0.1_mean_final_energy=1.0421
+  level_0.5: noise_0.5_convergence_rate=0.0000, noise_0.5_divergence_rate=0.0000, noise_0.5_recovery_rate=1.0000, noise_0.5_mean_final_energy=1.0531
+  level_1.0: noise_1.0_convergence_rate=0.0000, noise_1.0_divergence_rate=0.0000, noise_1.0_recovery_rate=1.0000, noise_1.0_mean_final_energy=1.0815
+
+STABILITY_INIT_CHAOS
+--------------------------------------------------
+  level_1.0: chaos_1.0_convergence_rate=0.0000, chaos_1.0_divergence_rate=0.0000, chaos_1.0_recovery_rate=1.0000, chaos_1.0_mean_final_energy=1.5070
+  level_5.0: chaos_5.0_convergence_rate=0.0000, chaos_5.0_divergence_rate=0.0000, chaos_5.0_recovery_rate=1.0000, chaos_5.0_mean_final_energy=36.3971
+  level_10.0: chaos_10.0_convergence_rate=0.0000, chaos_10.0_divergence_rate=0.6667, chaos_10.0_recovery_rate=0.3333, chaos_10.0_mean_final_energy=145.0979
+
+ABLATION
+--------------------------------------------------
+  full: final_energy=6.1130
+  no_modulation: final_energy=6.0978
+  no_hierarchy: final_energy=5.4351
+  no_aggregation: final_energy=6.1130
+  minimal: final_energy=5.4342
+
+ABLATION_MANIFOLD
+--------------------------------------------------
+  euclidean: final_energy=6.1130, curvature=0.0000
+  sphere: final_energy=13.2219, curvature=1.0000
+  hyperbolic: final_energy=18.0768, curvature=-1.0000
