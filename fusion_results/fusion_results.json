@@ -1,0 +1,496 @@
+{
+  "results": [
+    {
+      "experiment": "extreme_noise_snr0.2",
+      "method": "rmebm_euclidean",
+      "metrics": {
+        "mean_error": 8.450094223022461,
+        "std_error": 1.4189973672231038,
+        "failure_rate": 1.0,
+        "latent_smoothness": 5.7405727704366045,
+        "snr": 0.20000000000000004
+      }
+    },
+    {
+      "experiment": "extreme_noise_snr0.2",
+      "method": "hmed_sphere",
+      "metrics": {
+        "mean_error": 3.969931125640869,
+        "std_error": 0.684394915898641,
+        "failure_rate": 0.9133333365122477,
+        "latent_smoothness": 0.06280563771724701,
+        "snr": 0.20000000000000004
+      }
+    },
+    {
+      "experiment": "extreme_noise_snr0.2",
+      "method": "rmhmed_sphere",
+      "metrics": {
+        "mean_error": 4.101343472798665,
+        "std_error": 0.7327431639035543,
+        "failure_rate": 0.9400000174840292,
+        "latent_smoothness": 0.00013736328643669063,
+        "snr": 0.20000000000000004
+      }
+    },
+    {
+      "experiment": "extreme_noise_snr0.1",
+      "method": "rmebm_euclidean",
+      "metrics": {
+        "mean_error": 11.950237909952799,
+        "std_error": 2.0067654053370156,
+        "failure_rate": 1.0,
+        "latent_smoothness": 10.387334823608398,
+        "snr": 0.10000000000000002
+      }
+    },
+    {
+      "experiment": "extreme_noise_snr0.1",
+      "method": "hmed_sphere",
+      "metrics": {
+        "mean_error": 4.010881106058757,
+        "std_error": 0.6857739488283793,
+        "failure_rate": 0.9133333365122477,
+        "latent_smoothness": 0.06270640964309375,
+        "snr": 0.10000000000000002
+      }
+    },
+    {
+      "experiment": "extreme_noise_snr0.1",
+      "method": "rmhmed_sphere",
+      "metrics": {
+        "mean_error": 4.101339499155681,
+        "std_error": 0.7327355345090231,
+        "failure_rate": 0.9400000174840292,
+        "latent_smoothness": 0.00013734921715998402,
+        "snr": 0.10000000000000002
+      }
+    },
+    {
+      "experiment": "extreme_noise_snr0.05",
+      "method": "rmebm_euclidean",
+      "metrics": {
+        "mean_error": 16.900188446044922,
+        "std_error": 2.8379948933919272,
+        "failure_rate": 1.0,
+        "latent_smoothness": 19.64457066853841,
+        "snr": 0.05000000000000001
+      }
+    },
+    {
+      "experiment": "extreme_noise_snr0.05",
+      "method": "hmed_sphere",
+      "metrics": {
+        "mean_error": 4.035398403803508,
+        "std_error": 0.6768508752187093,
+        "failure_rate": 0.9133333365122477,
+        "latent_smoothness": 0.06287571663657825,
+        "snr": 0.05000000000000001
+      }
+    },
+    {
+      "experiment": "extreme_noise_snr0.05",
+      "method": "rmhmed_sphere",
+      "metrics": {
+        "mean_error": 4.101336161295573,
+        "std_error": 0.7327307462692261,
+        "failure_rate": 0.9400000174840292,
+        "latent_smoothness": 0.0001373393509614592,
+        "snr": 0.05000000000000001
+      }
+    },
+    {
+      "experiment": "extreme_noise_snr0.01",
+      "method": "rmebm_euclidean",
+      "metrics": {
+        "mean_error": 37.78997039794922,
+        "std_error": 6.345949014027913,
+        "failure_rate": 1.0,
+        "latent_smoothness": 93.37129720052083,
+        "snr": 0.01
+      }
+    },
+    {
+      "experiment": "extreme_noise_snr0.01",
+      "method": "hmed_sphere",
+      "metrics": {
+        "mean_error": 4.067507425944011,
+        "std_error": 0.7056140700976054,
+        "failure_rate": 0.9133333365122477,
+        "latent_smoothness": 0.06345129013061523,
+        "snr": 0.01
+      }
+    },
+    {
+      "experiment": "extreme_noise_snr0.01",
+      "method": "rmhmed_sphere",
+      "metrics": {
+        "mean_error": 4.101332187652588,
+        "std_error": 0.7327248652776083,
+        "failure_rate": 0.9400000174840292,
+        "latent_smoothness": 0.0001373275154037401,
+        "snr": 0.01
+      }
+    },
+    {
+      "experiment": "regime_alignment",
+      "method": "rmhmed_euclidean",
+      "metrics": {
+        "expert_regime_alignment": 0.25,
+        "entropy_collapsed": 1.0,
+        "eigenvector_alignment": 0.5454505185286204,
+        "alignment_improved": 1.0
+      }
+    },
+    {
+      "experiment": "regime_alignment",
+      "method": "rmhmed_sphere",
+      "metrics": {
+        "expert_regime_alignment": 0.25,
+        "entropy_collapsed": 1.0,
+        "eigenvector_alignment": 0.49354021747907,
+        "alignment_improved": 1.0
+      }
+    },
+    {
+      "experiment": "memory_test",
+      "method": "with_recursion",
+      "metrics": {
+        "mutual_information": "0.20259039",
+        "field_norm_change": 1.4160264829794567
+      }
+    },
+    {
+      "experiment": "memory_test",
+      "method": "without_recursion",
+      "metrics": {
+        "mutual_information": "0.17107737",
+        "field_norm_change": 0.0
+      }
+    },
+    {
+      "experiment": "phase_transition",
+      "method": "coupling_0.01",
+      "metrics": {
+        "R_mean": 0.9646231173475583,
+        "R_std": 0.1174268517644102,
+        "R_final": 0.9993419786294302,
+        "sync_rate": 1.0,
+        "oscillation_rate": 1.0,
+        "collapse_rate": 1.0
+      }
+    },
+    {
+      "experiment": "phase_transition",
+      "method": "coupling_0.1",
+      "metrics": {
+        "R_mean": 0.9643550548950831,
+        "R_std": 0.117476051121965,
+        "R_final": 0.999241461356481,
+        "sync_rate": 1.0,
+        "oscillation_rate": 1.0,
+        "collapse_rate": 1.0
+      }
+    },
+    {
+      "experiment": "phase_transition",
+      "method": "coupling_0.5",
+      "metrics": {
+        "R_mean": 0.9624112156033516,
+        "R_std": 0.11750676591248692,
+        "R_final": 0.9959428191184997,
+        "sync_rate": 1.0,
+        "oscillation_rate": 1.0,
+        "collapse_rate": 1.0
+      }
+    },
+    {
+      "experiment": "ablation",
+      "method": "full",
+      "metrics": {
+        "final_phi": -156.20851387791927,
+        "mean_energy": -3.106020776430766,
+        "stability_rate": 1.0,
+        "avg_violations": 13.0
+      }
+    },
+    {
+      "experiment": "ablation",
+      "method": "no_sphere",
+      "metrics": {
+        "final_phi": -228.17313072426865,
+        "mean_energy": -4.727835051218668,
+        "stability_rate": 0.3333333333333333,
+        "avg_violations": 67.0
+      }
+    },
+    {
+      "experiment": "ablation",
+      "method": "no_recursion",
+      "metrics": {
+        "final_phi": -158.26712285118467,
+        "mean_energy": -3.1388107856114704,
+        "stability_rate": 1.0,
+        "avg_violations": 5.333333333333333
+      }
+    },
+    {
+      "experiment": "ablation",
+      "method": "no_field_coupling",
+      "metrics": {
+        "final_phi": 51.286487684125696,
+        "mean_energy": 1.0,
+        "stability_rate": 1.0,
+        "avg_violations": 32.333333333333336
+      }
+    },
+    {
+      "experiment": "ablation",
+      "method": "no_modulation",
+      "metrics": {
+        "final_phi": -156.218884433889,
+        "mean_energy": -3.1086130221684773,
+        "stability_rate": 1.0,
+        "avg_violations": 13.666666666666666
+      }
+    },
+    {
+      "experiment": "ablation",
+      "method": "no_responsibilities",
+      "metrics": {
+        "final_phi": -36.57180269323289,
+        "mean_energy": -0.7365392920871576,
+        "stability_rate": 1.0,
+        "avg_violations": 66.0
+      }
+    },
+    {
+      "experiment": "ablation",
+      "method": "minimal",
+      "metrics": {
+        "final_phi": 45.09107735397915,
+        "mean_energy": 0.0043675667645099265,
+        "stability_rate": 1.0,
+        "avg_violations": 40.0
+      }
+    }
+  ],
+  "analysis": {
+    "winners": {
+      "extreme_noise_snr0.2": {
+        "method": "hmed_sphere",
+        "metric": "failure_rate",
+        "value": 0.9133333365122477
+      },
+      "extreme_noise_snr0.1": {
+        "method": "hmed_sphere",
+        "metric": "failure_rate",
+        "value": 0.9133333365122477
+      },
+      "extreme_noise_snr0.05": {
+        "method": "hmed_sphere",
+        "metric": "failure_rate",
+        "value": 0.9133333365122477
+      },
+      "extreme_noise_snr0.01": {
+        "method": "hmed_sphere",
+        "metric": "failure_rate",
+        "value": 0.9133333365122477
+      },
+      "regime_alignment": {
+        "method": "rmhmed_euclidean",
+        "metric": "expert_regime_alignment",
+        "value": 0.25
+      },
+      "memory_test": {
+        "method": "with_recursion",
+        "metric": "mutual_information",
+        "value": "0.20259039"
+      },
+      "ablation": {
+        "method": "no_sphere",
+        "metric": "final_phi",
+        "value": -228.17313072426865
+      }
+    },
+    "patterns": [],
+    "component_effects": {
+      "no_sphere": {
+        "phi_delta_pct": 46.06958677501946,
+        "hurts_performance": "True"
+      },
+      "no_recursion": {
+        "phi_delta_pct": 1.3178596494465287,
+        "hurts_performance": "False"
+      },
+      "no_field_coupling": {
+        "phi_delta_pct": -132.83206940787525,
+        "hurts_performance": "False"
+      },
+      "no_modulation": {
+        "phi_delta_pct": 0.006638918528152469,
+        "hurts_performance": "False"
+      },
+      "no_responsibilities": {
+        "phi_delta_pct": -76.58783008834214,
+        "hurts_performance": "False"
+      }
+    }
+  },
+  "failures": [
+    {
+      "experiment": "extreme_noise_snr0.2",
+      "method": "rmebm_euclidean",
+      "type": "inference_failure",
+      "severity": 1.0,
+      "classification": "PARAMETRIC",
+      "reason": "High failure rate indicates insufficient regularization or mismatched noise model. The energy landscape does not constrain solutions adequately when SNR << 1.",
+      "fix": "Increase geometric constraint strength, use robust loss, or add explicit noise model in energy function."
+    },
+    {
+      "experiment": "extreme_noise_snr0.2",
+      "method": "hmed_sphere",
+      "type": "inference_failure",
+      "severity": 0.9133333365122477,
+      "classification": "PARAMETRIC",
+      "reason": "High failure rate indicates insufficient regularization or mismatched noise model. The energy landscape does not constrain solutions adequately when SNR << 1.",
+      "fix": "Increase geometric constraint strength, use robust loss, or add explicit noise model in energy function."
+    },
+    {
+      "experiment": "extreme_noise_snr0.2",
+      "method": "rmhmed_sphere",
+      "type": "inference_failure",
+      "severity": 0.9400000174840292,
+      "classification": "PARAMETRIC",
+      "reason": "High failure rate indicates insufficient regularization or mismatched noise model. The energy landscape does not constrain solutions adequately when SNR << 1.",
+      "fix": "Increase geometric constraint strength, use robust loss, or add explicit noise model in energy function."
+    },
+    {
+      "experiment": "extreme_noise_snr0.1",
+      "method": "rmebm_euclidean",
+      "type": "inference_failure",
+      "severity": 1.0,
+      "classification": "PARAMETRIC",
+      "reason": "High failure rate indicates insufficient regularization or mismatched noise model. The energy landscape does not constrain solutions adequately when SNR << 1.",
+      "fix": "Increase geometric constraint strength, use robust loss, or add explicit noise model in energy function."
+    },
+    {
+      "experiment": "extreme_noise_snr0.1",
+      "method": "hmed_sphere",
+      "type": "inference_failure",
+      "severity": 0.9133333365122477,
+      "classification": "PARAMETRIC",
+      "reason": "High failure rate indicates insufficient regularization or mismatched noise model. The energy landscape does not constrain solutions adequately when SNR << 1.",
+      "fix": "Increase geometric constraint strength, use robust loss, or add explicit noise model in energy function."
+    },
+    {
+      "experiment": "extreme_noise_snr0.1",
+      "method": "rmhmed_sphere",
+      "type": "inference_failure",
+      "severity": 0.9400000174840292,
+      "classification": "PARAMETRIC",
+      "reason": "High failure rate indicates insufficient regularization or mismatched noise model. The energy landscape does not constrain solutions adequately when SNR << 1.",
+      "fix": "Increase geometric constraint strength, use robust loss, or add explicit noise model in energy function."
+    },
+    {
+      "experiment": "extreme_noise_snr0.05",
+      "method": "rmebm_euclidean",
+      "type": "inference_failure",
+      "severity": 1.0,
+      "classification": "PARAMETRIC",
+      "reason": "High failure rate indicates insufficient regularization or mismatched noise model. The energy landscape does not constrain solutions adequately when SNR << 1.",
+      "fix": "Increase geometric constraint strength, use robust loss, or add explicit noise model in energy function."
+    },
+    {
+      "experiment": "extreme_noise_snr0.05",
+      "method": "hmed_sphere",
+      "type": "inference_failure",
+      "severity": 0.9133333365122477,
+      "classification": "PARAMETRIC",
+      "reason": "High failure rate indicates insufficient regularization or mismatched noise model. The energy landscape does not constrain solutions adequately when SNR << 1.",
+      "fix": "Increase geometric constraint strength, use robust loss, or add explicit noise model in energy function."
+    },
+    {
+      "experiment": "extreme_noise_snr0.05",
+      "method": "rmhmed_sphere",
+      "type": "inference_failure",
+      "severity": 0.9400000174840292,
+      "classification": "PARAMETRIC",
+      "reason": "High failure rate indicates insufficient regularization or mismatched noise model. The energy landscape does not constrain solutions adequately when SNR << 1.",
+      "fix": "Increase geometric constraint strength, use robust loss, or add explicit noise model in energy function."
+    },
+    {
+      "experiment": "extreme_noise_snr0.01",
+      "method": "rmebm_euclidean",
+      "type": "inference_failure",
+      "severity": 1.0,
+      "classification": "PARAMETRIC",
+      "reason": "High failure rate indicates insufficient regularization or mismatched noise model. The energy landscape does not constrain solutions adequately when SNR << 1.",
+      "fix": "Increase geometric constraint strength, use robust loss, or add explicit noise model in energy function."
+    },
+    {
+      "experiment": "extreme_noise_snr0.01",
+      "method": "hmed_sphere",
+      "type": "inference_failure",
+      "severity": 0.9133333365122477,
+      "classification": "PARAMETRIC",
+      "reason": "High failure rate indicates insufficient regularization or mismatched noise model. The energy landscape does not constrain solutions adequately when SNR << 1.",
+      "fix": "Increase geometric constraint strength, use robust loss, or add explicit noise model in energy function."
+    },
+    {
+      "experiment": "extreme_noise_snr0.01",
+      "method": "rmhmed_sphere",
+      "type": "inference_failure",
+      "severity": 0.9400000174840292,
+      "classification": "PARAMETRIC",
+      "reason": "High failure rate indicates insufficient regularization or mismatched noise model. The energy landscape does not constrain solutions adequately when SNR << 1.",
+      "fix": "Increase geometric constraint strength, use robust loss, or add explicit noise model in energy function."
+    },
+    {
+      "experiment": "regime_alignment",
+      "method": "rmhmed_euclidean",
+      "type": "responsibility_collapse",
+      "severity": 1.0,
+      "classification": "ARCHITECTURAL",
+      "reason": "Mirror descent on simplex with reward-based updates causes winner-take-all dynamics when one expert consistently achieves lower energy. \u1e87_k \u221d r_k - r\u0304 amplifies differences.",
+      "fix": "Add entropy regularization to responsibility updates: \u1e87_k = \u03b3(r_k - r\u0304) - \u03bcw_k + \u03bb\u2207H(w). This preserves diversity."
+    },
+    {
+      "experiment": "regime_alignment",
+      "method": "rmhmed_sphere",
+      "type": "responsibility_collapse",
+      "severity": 1.0,
+      "classification": "ARCHITECTURAL",
+      "reason": "Mirror descent on simplex with reward-based updates causes winner-take-all dynamics when one expert consistently achieves lower energy. \u1e87_k \u221d r_k - r\u0304 amplifies differences.",
+      "fix": "Add entropy regularization to responsibility updates: \u1e87_k = \u03b3(r_k - r\u0304) - \u03bcw_k + \u03bb\u2207H(w). This preserves diversity."
+    },
+    {
+      "experiment": "phase_transition",
+      "method": "coupling_0.01",
+      "type": "mode_collapse",
+      "severity": 1.0,
+      "classification": "FUNDAMENTAL",
+      "reason": "Mode collapse occurs because gradient-based optimization with global field coupling creates attractor dynamics that funnel all agents to dominant mode. Mathematically: d/dt \u03a3||z_i - z_j||\u00b2 < 0 when W has positive eigenvalues.",
+      "fix": "Cannot be fully fixed within framework. Partial mitigation: add repulsive terms, use multiple fields, or enforce diversity constraints explicitly."
+    },
+    {
+      "experiment": "phase_transition",
+      "method": "coupling_0.1",
+      "type": "mode_collapse",
+      "severity": 1.0,
+      "classification": "FUNDAMENTAL",
+      "reason": "Mode collapse occurs because gradient-based optimization with global field coupling creates attractor dynamics that funnel all agents to dominant mode. Mathematically: d/dt \u03a3||z_i - z_j||\u00b2 < 0 when W has positive eigenvalues.",
+      "fix": "Cannot be fully fixed within framework. Partial mitigation: add repulsive terms, use multiple fields, or enforce diversity constraints explicitly."
+    },
+    {
+      "experiment": "phase_transition",
+      "method": "coupling_0.5",
+      "type": "mode_collapse",
+      "severity": 1.0,
+      "classification": "FUNDAMENTAL",
+      "reason": "Mode collapse occurs because gradient-based optimization with global field coupling creates attractor dynamics that funnel all agents to dominant mode. Mathematically: d/dt \u03a3||z_i - z_j||\u00b2 < 0 when W has positive eigenvalues.",
+      "fix": "Cannot be fully fixed within framework. Partial mitigation: add repulsive terms, use multiple fields, or enforce diversity constraints explicitly."
+    }
+  ],
+  "elapsed_time": 40.52433919906616
+}

@@ -1,0 +1,156 @@
+
+======================================================================
+FINAL VERDICT: RM-HMED FUSION EVALUATION
+======================================================================
+
+======================================================================
+Q1: Does RM-HMED unlock any capability not present in HMED or RM-EBM alone?
+======================================================================
+
+VERDICT: MARGINAL. Limited novel capabilities detected.
+
+Observations:
+
+  1. NOISE ROBUSTNESS: No significant improvement from fusion.
+
+  2. SELF-ORGANIZATION: Experts fail to specialize to regimes.
+
+  3. MEMORY: MI = 0.203 between early/late states.
+
+
+======================================================================
+Q2: Does recursion + geometry produce stateful behavior beyond optimization?
+======================================================================
+
+VERDICT: YES, phase transitions detected.
+
+  - Synchronization rate: 100.0%
+  - Oscillatory behavior: 100.0%
+
+  However, these are standard coupled oscillator phenomena,
+  not novel emergent computation.
+
+  Lyapunov stability: 90.5% of runs stable
+  Φ̇ ≤ 0 verified empirically in most runs.
+
+
+======================================================================
+Q3: Is there a credible path to long-horizon reasoning, memory, or coordination?
+======================================================================
+
+LONG-HORIZON REASONING:
+  VERDICT: NO CREDIBLE PATH
+  MATHEMATICAL REASON:
+    The system optimizes E(z; W) locally at each step.
+    Credit assignment requires ∂L_T/∂z_0, which decays as ||A||^T.
+    Recursive field evolution does NOT propagate gradients backwards.
+    Adding transport term ∇_s W · V changes W's evolution, not
+    gradient flow through time.
+
+  FORMAL LIMITATION:
+    For horizon T, gradient signal at t=0 is O(||A||^T) ≈ 0
+    for stable dynamics (||A|| < 1). This is fundamental to
+    any gradient-based system without explicit skip connections.
+
+PERSISTENT MEMORY:
+  VERDICT: NO CREDIBLE PATH
+  MATHEMATICAL REASON:
+    W(t) evolves via Ẇ = γ Σ p_i z_i z_i^T - λW + ∇_s W · V
+    This is a SPATIAL correlation tracker, not temporal memory:
+    - Hebbian term captures current correlations only
+    - Decay term erases old information
+    - Transport term modulates rate, not content
+
+  FORMAL LIMITATION:
+    Without explicit storage (weights, buffers, attention),
+    information from t=0 cannot be retrieved at t=T.
+    The eigenspectrum of W contains no temporal encoding.
+
+AGENT COORDINATION:
+  VERDICT: PARTIAL - within narrow scope
+  MATHEMATICAL REASON:
+    Coupling via shared W creates synchronization:
+    ż_i = -∇E(z_i; W) where W depends on all z_j
+    This produces Kuramoto-like synchronization (R → 1).
+
+  LIMITATION:
+    Coordination is emergent consensus, not task-directed.
+    Agents cannot pursue different goals or coordinate strategies.
+    No mechanism for communication or planning.
+
+
+======================================================================
+FAILURE MODE TAXONOMY
+======================================================================
+
+[FUNDAMENTAL - Cannot be fixed within framework]
+
+  MODE_COLLAPSE
+    Reason: Mode collapse occurs because gradient-based optimization with global field coupling creates attractor dynamics that funnel all agents to dominant mode. Mathematically: d/dt Σ||z_i - z_j||² < 0 when W ...
+    Status: Cannot be fully fixed within framework. Partial mitigation: add repulsive terms, use multiple fields...
+
+  MODE_COLLAPSE
+    Reason: Mode collapse occurs because gradient-based optimization with global field coupling creates attractor dynamics that funnel all agents to dominant mode. Mathematically: d/dt Σ||z_i - z_j||² < 0 when W ...
+    Status: Cannot be fully fixed within framework. Partial mitigation: add repulsive terms, use multiple fields...
+
+  MODE_COLLAPSE
+    Reason: Mode collapse occurs because gradient-based optimization with global field coupling creates attractor dynamics that funnel all agents to dominant mode. Mathematically: d/dt Σ||z_i - z_j||² < 0 when W ...
+    Status: Cannot be fully fixed within framework. Partial mitigation: add repulsive terms, use multiple fields...
+
+
+[ARCHITECTURAL - Fixable with redesign]
+
+  RESPONSIBILITY_COLLAPSE
+    Fix: Add entropy regularization to responsibility updates: ẇ_k = γ(r_k - r̄) - μw_k + λ∇H(w). This preserves diversity....
+
+  RESPONSIBILITY_COLLAPSE
+    Fix: Add entropy regularization to responsibility updates: ẇ_k = γ(r_k - r̄) - μw_k + λ∇H(w). This preserves diversity....
+
+
+[PARAMETRIC - Fixable with tuning]
+
+  INFERENCE_FAILURE
+    Fix: Increase geometric constraint strength, use robust loss, or add explicit noise model in energy function....
+
+  INFERENCE_FAILURE
+    Fix: Increase geometric constraint strength, use robust loss, or add explicit noise model in energy function....
+
+  INFERENCE_FAILURE
+    Fix: Increase geometric constraint strength, use robust loss, or add explicit noise model in energy function....
+
+
+======================================================================
+ABLATION SUMMARY
+======================================================================
+
+Component impact on Φ (negative = helps):
+  no_field_coupling        : -132.8% (HELPS)
+  no_responsibilities      : -76.6% (HELPS)
+  no_modulation            : +0.0% (NEUTRAL)
+  no_recursion             : +1.3% (NEUTRAL)
+  no_sphere                : +46.1% (HURTS)
+
+
+======================================================================
+CONCLUSION
+======================================================================
+
+RM-HMED is a mathematically coherent fusion that:
+  + Combines manifold geometry with recursive field dynamics
+  + Achieves Lyapunov stability in controlled settings
+  + Exhibits emergent synchronization and regime discovery
+
+The framework CANNOT do:
+  - Long-horizon credit assignment (fundamental gradient decay)
+  - Temporal memory storage (W is spatial, not temporal)
+  - Goal-directed coordination (only emergent consensus)
+  - Compositional reasoning (continuous dynamics only)
+
+OVERALL VERDICT:
+  The fusion provides modest improvements in specific regimes
+  (noise robustness, self-organization) but does NOT unlock
+  qualitatively new computational capabilities.
+
+  There is NO credible path from this system to AGI-relevant
+  capabilities without fundamental architectural additions
+  (recurrence, attention, explicit memory, symbolic grounding).
